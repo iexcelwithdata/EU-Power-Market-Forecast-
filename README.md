@@ -6,23 +6,43 @@ Interactive Power BI dashboard for EU renewable energy capture price forecasts
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)  
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)  
 
-## 📌 Overview
-This repository contains a **Power BI dashboard** designed to analyze and visualize **renewable energy capture price forecasts** for the EU power markets.  
-It focuses on **Solar PV, Onshore Wind, and Offshore Wind**, combining data transformation (Power Query), robust data modeling (DAX), and interactive visualization.  
+## 📖 Scenario
 
-The dashboard enables decision-makers to:  
-- Track forecast evolution across quarters.  
-- Compare analyst views (Aaron – GB, Brian – DE).  
-- Identify year-on-year shifts in capture prices.  
-- Visualize technology-specific market insights.  
+Laura is a director for strategic planning and development at a European renewable energy firm assisted by two excellent analysts named Aaron and Brian. The duo provides her with power market forecasts for their respective markets. Aaron is covering Great Britain (GB) and Brian is responsible for Germany (DE). Both are on holiday and will not return until after Oktoberfest.
 
----
+Laura has an urgent analysis to perform within a few days. She knows you are a great data analyst working in another department and has reached out to you for help. She has placed Aaron and Brian’s Excel spreadsheets in a Dropbox folder, containing forecasts on generation capacity, power generation, wholesale, and capture prices etc. from Q3 2022 and Q1 2023. She wants you to help make sense of the data and draw some insights for her work.
 
-## 🎯 Objectives
-- Provide a clear **side-by-side comparison** of renewable capture prices in GB and DE.  
-- Track how forecasts evolved between **2022Q3 and 2023Q1**.  
-- Deliver interactive slicers (currency, inflation adjustment, forecast version).  
-- Create KPI cards with **dynamic arrows (↑ ↓ →)** using DAX & UNICHAR for trend insights.  
+Laura is particularly interested in the following for the 2023–2050 period:
+
+How do wholesale power prices (baseload) compare between GB and DE, and can the generation mix explain the difference?
+
+From a capture price perspective, which technology offers better potential between solar PV in GB and onshore wind in DE?
+
+In the long run, is there a relationship between capture prices and power generation output (GWh) for solar PV and onshore wind in DE?
+
+Did Aaron change his forecast for solar PV and onshore wind capture prices between Q3 2022 and Q1 2023? If so, how significant is the shift and what could possibly explain that?
+
+Laura also provided key assumptions:
+
+GBP-EUR exchange rate: 1.164 (2022), 1.161 (2023), 1.158 (2024–2050).
+
+Annual inflation rate: 6.87% (DE, 2022) and 9.06% (GB, 2022).
+
+Finally, as a strategist, she wants to avoid similar hassles in future. She’d like a process where she can swap in new Excel spreadsheets (different quarters) and have Power BI update automatically.
+
+You also discussed the task with another analyst colleague who suggested considering the following:
+
+Centralized Data Approach – future-proofing via a data lake/warehouse.
+
+Data Transformation (ETL) – clean, filter, and structure Excel data for analysis.
+
+Data Visualization – build interactive Power BI dashboards with slicers for quarters, years, and currencies.
+
+Automation – enable automatic refresh when new files are added.
+
+User-Friendly Interface – give Laura control over filters and parameters.
+
+Documentation & Training – ensure Laura can reuse the workflow independently.s.  
 
 ---
 
