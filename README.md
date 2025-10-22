@@ -2,35 +2,30 @@
 Interactive Power BI dashboard for EU renewable energy capture price forecasts
 
 
-![Power BI](https://img.shields.io/badge/Tool-Power%20BI-F2C811?logo=powerbi)  
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)  
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)  
-
 ## 📖 Scenario
 
-Laura is a director for strategic planning and development at a European renewable energy firm assisted by two excellent analysts named Aaron and Brian. The duo provides her with power market forecasts for their respective markets. Aaron is covering Great Britain (GB) and Brian is responsible for Germany (DE). Both are on holiday and will not return until after Oktoberfest.
+Laura, the director for strategic planning and development at my firm, reached out to me with an urgent request. Her two market analysts, Aaron (GB) and Brian (DE), were on holiday, and she needed an analysis performed within a few days.
 
-Laura has an urgent analysis to perform within a few days. She knows you are a great data analyst working in another department and has reached out to you for help. She has placed Aaron and Brian’s Excel spreadsheets in a Dropbox folder, containing forecasts on generation capacity, power generation, wholesale, and capture prices etc. from Q3 2022 and Q1 2023. She wants you to help make sense of the data and draw some insights for her work.
+She placed their latest Excel spreadsheets in a Dropbox folder, containing forecasts on generation capacity, power generation, wholesale, and capture prices from Q3 2022 and Q1 2023. My task was to make sense of this data and draw key insights for her strategic work
 
-Laura is particularly interested in the following for the 2023–2050 period:
 
-How do wholesale power prices (baseload) compare between GB and DE, and can the generation mix explain the difference?
 
-From a capture price perspective, which technology offers better potential between solar PV in GB and onshore wind in DE?
+### Laura is particularly interested in the following for the 2023–2050 period:
 
-In the long run, is there a relationship between capture prices and power generation output (GWh) for solar PV and onshore wind in DE?
+1.  How do **wholesale power prices (baseload)** compare between Great Britain (GB) and Germany (DE), and how does the generation mix explain the difference?
+2.  Which technology offers better long-term potential: **Solar PV in GB** or **Onshore Wind in DE** (from a capture price perspective)?
+3.  Is there a relationship between **capture prices and power generation output (GWh)** for solar PV and onshore wind in DE?
+4.  Did Aaron significantly change his solar PV and onshore wind capture price forecasts between Q3 2022 and Q1 2023?
 
-Did Aaron change his forecast for solar PV and onshore wind capture prices between Q3 2022 and Q1 2023? If so, how significant is the shift and what could possibly explain that?
+#### Laura also provided key assumptions:
 
-Laura also provided key assumptions:
+1. GBP-EUR exchange rate: 1.164 (2022), 1.161 (2023), 1.158 (2024–2050).
 
-GBP-EUR exchange rate: 1.164 (2022), 1.161 (2023), 1.158 (2024–2050).
-
-Annual inflation rate: 6.87% (DE, 2022) and 9.06% (GB, 2022).
+2. Annual inflation rate: 6.87% (DE, 2022) and 9.06% (GB, 2022).
 
 Finally, as a strategist, she wants to avoid similar hassles in future. She’d like a process where she can swap in new Excel spreadsheets (different quarters) and have Power BI update automatically.
 
-You also discussed the task with another analyst colleague who suggested considering the following:
+I also discussed the task with another analyst colleague who suggested considering the following:
 
 Centralized Data Approach – future-proofing via a data lake/warehouse.
 
@@ -57,18 +52,15 @@ Documentation & Training – ensure Laura can reuse the workflow independently.s
 - Automated ingestion of multiple Excel/CSV files via **Folder connector**.  
 - Dynamic year extraction logic to handle files with inconsistent starting years.  
 - Removed hidden/system files.  
-- Applied transformation scripts stored in [`docs/powerquery-m.md`](docs/powerquery-m.md).  
 
 ---
 
 ## 🧮 Data Modeling (DAX)
 Key measures developed:  
-- **Average Capture Price** (by tech, country, analyst).  
-- **Forecast Change %** between quarters (with ALL() to ignore Forecast Version filter).  
+- **Median Capture Price** (by tech).  
+- **Forecast Change %** between the two versions of the dataset.  
 - **YoY Growth** with conditional formatting.  
-- **Dynamic Arrows** (↑ Green, ↓ Red, → Grey) using `UNICHAR`.  
-
-👉 Full list available in [`docs/dax-measures.md`](docs/dax-measures.md).  
+- **Dynamic Arrows** (↑ Green, ↓ Red, → Grey) using `UNICHAR`.    
 
 ---
 
