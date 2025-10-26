@@ -1,5 +1,5 @@
 # ⚡ **EU Renewable Energy Market Intelligence Dashboard**  
-**(Power BI | Data Analytics | Forecast Automation | Energy Strategy | ETL | DAX | Data Modeling)**  
+**(Power BI | Data Analytics | Automation | Energy Strategy | ETL | DAX | Data Modeling)**  
 
 ---
 
