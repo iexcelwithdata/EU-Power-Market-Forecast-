@@ -114,7 +114,7 @@ Create a **fully automated Power BI dashboard** that consolidates forecasts, com
 
 ## 🎨 **Project Presentation (PowerPoint)**
 
-![Presentation1](./assets/EU%20Power%20Market%20Forecast%20Report%20.png)
+![Presentation1](./assets/Powerpoint%20Report.png)
 
 [📂 **Open Full Presentation**](./Presentation1.pptx)
 
