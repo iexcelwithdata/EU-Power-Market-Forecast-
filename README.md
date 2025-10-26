@@ -106,7 +106,7 @@ Create a **fully automated Power BI dashboard** that consolidates forecasts, com
 
 ## 🖼️ **Dashboard Preview**
 
-![EU Power Market Forecast](./assets/EU%20Power%20Market%20Forecast%20Report.png)
+![EU Power Market Forecast](./assets/EU%20Power%20Market%20Forecast.png)
 
 [▶️ **View Full Interactive Dashboard (PDF)**](./Energy%20Project%20Dashboard.pdf)
 
@@ -114,7 +114,7 @@ Create a **fully automated Power BI dashboard** that consolidates forecasts, com
 
 ## 🎨 **Project Presentation (PowerPoint)**
 
-![Presentation1](./assets/EU%20Power%20Market%20Forecast%20Report.png)
+![Presentation1](./assets/EU%20Power%20Market%20Forecast%20Report%20.png)
 
 [📂 **Open Full Presentation**](./Presentation1.pptx)
 
