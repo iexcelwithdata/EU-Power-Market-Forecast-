@@ -16,7 +16,7 @@ By automating the analytics process, the project enables leadership to:
 
 > 💼 **Business Impact:** Delivered a repeatable analytics framework that cuts manual reporting time by **85%** and provides executives with instant, reliable insights into cross-country investment performance.  
 
-![EU Power Market Forecast Problem Overview](./assets/EU%20Power%20Market%20Forecast%20Problem%20Overview.png)
+![EU Power Market Forecast Problem Overview](./assets/EU%20Power%20Market%20Forecast%20Problem%20View.png)
 
 ---
 
@@ -114,7 +114,7 @@ Create a **fully automated Power BI dashboard** that consolidates forecasts, com
 
 ## 🎨 **Project Presentation (PowerPoint)**
 
-![Presentation1](./assests/EU%20Power%20Market%20Forecast%20Report.png)
+![Presentation1](./assets/EU%20Power%20Market%20Forecast%20Report.png)
 
 [📂 **Open Full Presentation**](./Presentation1.pptx)
 
