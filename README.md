@@ -76,7 +76,7 @@ Key measures developed:
 ## 🖼️ Dashboard Preview
 
 ### Main Overview Page
-![Main Dashboard](assets/dashboard_main.png)
+![Main Dashboard](https://github.com/iexcelwithdata/EU-Power-Market-Forecast-/EU-Power-Market-Forecast.png)
 
 ### Analyst Comparison
 ![Analyst Comparison](assets/dashboard_comparison.png)
