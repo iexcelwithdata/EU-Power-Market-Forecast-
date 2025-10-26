@@ -16,6 +16,8 @@ By automating the analytics process, the project enables leadership to:
 
 > 💼 **Business Impact:** Delivered a repeatable analytics framework that cuts manual reporting time by **85%** and provides executives with instant, reliable insights into cross-country investment performance.  
 
+![EU Power Market Forecast Problem Overview](./assets/EU%20Power%20Market%20Forecast%20Problem%20Overview.png)
+
 ---
 
 ## 🧩 **Business Problem**
@@ -104,7 +106,7 @@ Create a **fully automated Power BI dashboard** that consolidates forecasts, com
 
 ## 🖼️ **Dashboard Preview**
 
-![EU Power Market Forecast](./EU%20Power%20Market%20Forecast.png)
+![EU Power Market Forecast](./assets/EU%20Power%20Market%20Forecast.png)
 
 [▶️ **View Full Interactive Dashboard (PDF)**](./Energy%20Project%20Dashboard.pdf)
 
@@ -112,7 +114,7 @@ Create a **fully automated Power BI dashboard** that consolidates forecasts, com
 
 ## 🎨 **Project Presentation (PowerPoint)**
 
-![Presentation1](./Presentation1.png)
+![Presentation1](./assests/EU%20Power%20Market%20Forecast%20Report.png)
 
 [📂 **Open Full Presentation**](./Presentation1.pptx)
 
@@ -121,7 +123,7 @@ Create a **fully automated Power BI dashboard** that consolidates forecasts, com
 ## 👤 **Author**
 
 **Kuku Faruq Olabiyi**  
-_Data & Energy Analytics | Power BI | Strategy Insights_  
+_Data Analytics | Power BI | Business Intelligence | Data Storytelling_  
 📧 **kukuolabiyi04@gmail.com**  
 💼 [LinkedIn](https://www.linkedin.com/in/faruqkukuolabiyi)  
-🐙 [GitHub](https://github.com/yourusername)
+🐙 [GitHub](https://github.com/iexcelwithdata)
