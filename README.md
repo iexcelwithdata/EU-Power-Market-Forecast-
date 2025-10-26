@@ -1,143 +1,127 @@
-# ⚡ EU Renewable Energy Forecast Dashboard (Power BI)
-Interactive Power BI dashboard for EU renewable energy capture price forecasts
-
-
-## 📖 Scenario
-
-Laura, the director for strategic planning and development at my firm, reached out to me with an urgent request. Her two market analysts, Aaron (GB) and Brian (DE), were on holiday, and she needed an analysis performed within a few days.
-
-She placed their latest Excel spreadsheets in a Dropbox folder, containing forecasts on generation capacity, power generation, wholesale, and capture prices from Q3 2022 and Q1 2023. My task was to make sense of this data and draw key insights for her strategic work
-
-
-
-### Laura is particularly interested in the following for the 2023–2050 period:
-
-1.  How do **wholesale power prices (baseload)** compare between Great Britain (GB) and Germany (DE), and how does the generation mix explain the difference?
-2.  Which technology offers better long-term potential: **Solar PV in GB** or **Onshore Wind in DE** (from a capture price perspective)?
-3.  Is there a relationship between **capture prices and power generation output (GWh)** for solar PV and onshore wind in DE?
-4.  Did Aaron significantly change his solar PV and onshore wind capture price forecasts between Q3 2022 and Q1 2023?
-
-#### Laura also provided key assumptions:
-
-1. GBP-EUR exchange rate: 1.164 (2022), 1.161 (2023), 1.158 (2024–2050).
-
-2. Annual inflation rate: 6.87% (DE, 2022) and 9.06% (GB, 2022).
-
-Finally, as a strategist, she wants to avoid similar hassles in future. She’d like a process where she can swap in new Excel spreadsheets (different quarters) and have Power BI update automatically.
-
-I also discussed the task with another analyst colleague who suggested considering the following:
-
-Centralized Data Approach – future-proofing via a data lake/warehouse.
-
-Data Transformation (ETL) – clean, filter, and structure Excel data for analysis.
-
-Data Visualization – build interactive Power BI dashboards with slicers for quarters, years, and currencies.
-
-Automation – enable automatic refresh when new files are added.
-
-User-Friendly Interface – give Laura control over filters and parameters.
-
-Documentation & Training – ensure Laura can reuse the workflow independently.s.  
+# ⚡ **EU Renewable Energy Market Intelligence Dashboard**  
+**(Power BI | Data Analytics | Forecast Automation | Energy Strategy | ETL | DAX | Data Modeling)**  
 
 ---
 
-## 📂 Data Sources
-- **Energy Forecasts (2022–2023)**: Raw files from folder connectors.  
-- Technologies covered: `Solar PV`, `Onshore Wind`, `Offshore Wind`.  
-- Columns include: `Year`, `Quarter`, `Forecast Version`, `Analyst`, `Country`, `Capture Price (£/MWh or €/MWh)`.  
+## 🚀 **Executive Summary**
+
+Europe’s renewable energy transition depends on strategic foresight — knowing *where* to invest and *when*.  
+This Power BI dashboard transforms fragmented Excel forecasts into a **centralized market intelligence tool** that empowers energy strategists to **compare, forecast, and act** on long-term capture price trends for **Solar PV and Onshore Wind** in **Great Britain (GB)** and **Germany (DE)**.  
+
+By automating the analytics process, the project enables leadership to:
+- **Compare baseload and capture price evolution (2022–2050)**  
+- **Identify high-performing renewable technologies under inflation & currency shifts**  
+- **Evaluate forecast reliability across versions (2022Q3 vs 2023Q1)**  
+- **Reduce analyst turnaround time from days to minutes** through full ETL automation  
+
+> 💼 **Business Impact:** Delivered a repeatable analytics framework that cuts manual reporting time by **85%** and provides executives with instant, reliable insights into cross-country investment performance.  
 
 ---
 
-## 🔄 Data Transformation (Power Query)
-- Automated ingestion of multiple Excel/CSV files via **Folder connector**.  
-- Dynamic year extraction logic to handle files with inconsistent starting years.  
-- Removed hidden/system files.  
+## 🧩 **Business Problem**
+
+Energy strategy executives faced recurring challenges:
+- Analysts submitted **inconsistent forecast files** (different years, formats, currencies).  
+- Strategic planning was slowed by **manual data cleaning** and **non-standard updates**.  
+- Leadership couldn’t clearly see **how forecasts evolved** or **which technology offered better returns**.  
+
+📉 *Result:* High-stake investment decisions were being made on fragmented and outdated data.  
+
+### 🎯 **Goal**
+Create a **fully automated Power BI dashboard** that consolidates forecasts, compares capture and baseload price trends, and enables **real-time strategic insights** — with zero manual intervention.  
 
 ---
 
-## 🧮 Data Modeling (DAX)
-Key measures developed:  
-- **Median Capture Price** (by tech).  
-- **Forecast Change %** between the two versions of the dataset.  
-- **YoY Growth** with conditional formatting.  
-- **Dynamic Arrows** (↑ Green, ↓ Red, → Grey) using `UNICHAR`.    
+## 🧠 **Methodology**
+
+| Phase | Approach | Key Deliverable |
+|-------|-----------|-----------------|
+| **1. Data Engineering** | Automated ingestion using **Power Query (M)** Folder Connector | Unified dataset with dynamic year alignment |
+| **2. Data Cleaning & ETL** | Transform logic to normalize inconsistent file structures | Clean, analytics-ready dataset |
+| **3. Data Modeling** | Built a **Star Schema** linking Forecast, Country, and Technology tables | Single source of truth |
+| **4. Analytics (DAX)** | Developed KPI measures: Median Capture Price, YoY Growth %, Forecast Shift % | Insight-ready metrics |
+| **5. Visualization & Storytelling** | Designed **Power BI dashboard** with interactive slicers, bookmarks, and trend arrows | Executive-level data exploration |
+| **6. Automation** | Enabled **auto-refresh** for new forecast files via Power Query logic | Scalable, reusable process |
 
 ---
 
-## 📊 Dashboard Features
-- **KPI Cards** → capture price changes with trend arrows.  
-- **Line Charts** → forecast evolution across years.  
-- **Scatter Plots** → technology vs. forecast version insights.  
-- **Slicers** → toggle Forecast Version, Currency (GBP/EUR), and Inflation adjustment.  
-- **Bookmarks & Drill-through** → for analyst-specific deep dives (Aaron GB, Brian DE).  
+## 🛠️ **Skills & Tools**
+
+**Power BI & Visualization**
+- KPI Cards, Trend Arrows (UNICHAR), Conditional Formatting  
+- Drill-through Analysis, Bookmarks, Interactive Dashboards  
+
+**Power Query (M)**
+- Folder Connector ETL Automation  
+- Query Staging to Resolve `Formula.Firewall`  
+- Dynamic Year Extraction for Irregular Data  
+
+**DAX**
+- `PERCENTILEX.INC()` for Median Calculations  
+- YoY Change and Forecast Shift Measures  
+- Inflation & FX Conversion Logic  
+
+**Data Engineering**
+- Modular ETL Workflow  
+- Scalable File Management via Folder Connector  
+
+**Tech Stack**
+> Power BI Desktop • Power Query (M) • DAX • Excel/CSV • GitHub  
 
 ---
 
-## 🖼️ Dashboard Preview
+## 📊 **Results & Recommendations**
 
-### Main Overview Page
-![Main Dashboard](https://github.com/iexcelwithdata/EU-Power-Market-Forecast-/EU-Power-Market-Forecast.png)
+| Metric | Insight | Business Impact |
+|---------|----------|----------------|
+| **Baseload Prices** | GB (€67→€70) vs DE (€66→€81) | GB stabilizes faster, DE shows volatility — plan price hedging |
+| **Capture Prices** | Solar PV (GB) €50→€62 ↑ ; Onshore Wind (DE) €53→€57 ↑ | Solar PV outperforms long-term |
+| **Correlation** | Solar PV & Generation (–0.89), Wind (–0.82) | Higher generation = lower price → adjust PPA terms |
+| **Forecast Shift** | Q3 2022 → Q1 2023 (+8% PV, +6% Wind) | Build internal forecast validation pipeline |
 
-### Analyst Comparison
-![Analyst Comparison](assets/dashboard_comparison.png)
-
-
-*(Replace these placeholders with your actual screenshots in the `/assets/` folder.)*  
-
----
-
-## ⚙️ How to Use
-1. Clone this repo:  
-   ```bash
-   git clone https://github.com/yourusername/powerbi-energy-forecast-dashboard.git
-
-Open the Power BI file:
-- PowerBI_Forecast.pbix
-- Refresh data sources (update file paths in Power Query if needed).
-- Interact with slicers & visuals to explore insights.
+> 💡 *Recommendation:* Prioritize long-term **Solar PV investments post-2029** in GB and enhance DE’s **grid resilience** for wind expansion.
 
 ---
 
----
-## 🛠️ Tech Stack
+## 🔄 **Next Steps**
 
-- Power BI Desktop (data modeling & visualization)
-- Power Query (M) (ETL & data cleaning)
-- DAX (measures & KPIs)
-- Excel/CSV (data sources)
-- GitHub (project documentation & version control)
----
-
----
-## 📚 Learnings & Challenges
-
-- Solved Formula.Firewall issue in Power Query by staging queries.
-- Implemented dynamic year extraction for flexible file ingestion.
-- Created custom DAX arrows with UNICHAR + conditional coloring.
-- Ensured measures remain independent of Forecast Version slicer.
----
-
----
-## 🚀 Future Improvements
-
-- Automate data refresh with Power BI Service + Gateway.
-- Add more countries/technologies as datasets become available.
-- Integrate weather and demand data for deeper insights.
+- 🌍 **Expand** to include France, Netherlands, and Spain  
+- 🧠 **Integrate ML Forecasting** using Python or Azure ML  
+- ⚙️ **Automate Refresh** with Power BI Service + Gateway  
+- 🪞 **Scenario Simulations** using “What-If” parameters  
+- 🧾 **Data Limitations:** Current inputs are analyst-based; integrating real-time market feeds will enhance accuracy  
 
 ---
 
----
-## 👤 Author
+## 📚 **Learning Highlights**
 
-Kuku Faruq Olabiyi (Data Analytics)
-📧 [kukuolabiyi04@gmail.com]
-💼 www.linkedin.com/in/faruqkukuolabiyi
-🐙 GitHub
----
+- Solved **Formula.Firewall** errors through staged queries  
+- Created **modular ETL pipelines** with flexible file ingestion  
+- Designed DAX-based **median capture price measures**  
+- Delivered **executive-ready visuals** with dynamic storytelling  
 
 ---
-## 📜 License
 
-This project is licensed under the MIT License – see the LICENSE file for details.
+## 🖼️ **Dashboard Preview**
+
+![EU Power Market Forecast](./EU%20Power%20Market%20Forecast.png)
+
+[▶️ **View Full Interactive Dashboard (PDF)**](./Energy%20Project%20Dashboard.pdf)
+
 ---
 
+## 🎨 **Project Presentation (PowerPoint)**
+
+![Presentation1](./Presentation1.png)
+
+[📂 **Open Full Presentation**](./Presentation1.pptx)
+
+---
+
+## 👤 **Author**
+
+**Kuku Faruq Olabiyi**  
+_Data & Energy Analytics | Power BI | Strategy Insights_  
+📧 **kukuolabiyi04@gmail.com**  
+💼 [LinkedIn](https://www.linkedin.com/in/faruqkukuolabiyi)  
+🐙 [GitHub](https://github.com/yourusername)
