@@ -116,7 +116,7 @@ Create a **fully automated Power BI dashboard** that consolidates forecasts, com
 
 ![Presentation1](./assets/Powerpoint%20Report.png)
 
-[📂 **Open Full Presentation**](./Presentation1.pptx)
+[📂 **Open Full Presentation**](./assests/EU%20Report.pptx)
 
 ---
 
