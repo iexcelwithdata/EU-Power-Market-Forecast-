@@ -79,7 +79,7 @@ Create a **fully automated Power BI dashboard** that consolidates forecasts, com
 | **Baseload Prices** | GB (€67→€70) vs DE (€66→€81) | GB stabilizes faster, DE shows volatility — plan price hedging |
 | **Capture Prices** | Solar PV (GB) €50→€62 ↑ ; Onshore Wind (DE) €53→€57 ↑ | Solar PV outperforms long-term |
 | **Correlation** | Solar PV & Generation (–0.89), Wind (–0.82) | Higher generation = lower price → adjust PPA terms |
-| **Forecast Shift** | Q3 2022 → Q1 2023 (+8% PV, +6% Wind) | Build internal forecast validation pipeline |
+| **Forecast Shift** | Q3 2022 → Q1 2023 (+24% PV, +7.5% Wind) | Build internal forecast validation pipeline |
 
 > 💡 *Recommendation:* Prioritize long-term **Solar PV investments post-2029** in GB and enhance DE’s **grid resilience** for wind expansion.
 
